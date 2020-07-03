@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+.main-stat {
+    min-width: 230px;
+    background-color: #273c75;
+    padding-bottom: 20px;
+
+}
+.main-table {
+    min-width: 230px;
+    background-image: url("statistics3.svg");
+    background-size: cover;
+    padding-bottom: 20px;
+
+
+}
+.stat-title {
+    color: #f5f6fa;
+    font-family: rubik,sans-serif;
+    font-size: small;
+    padding:15px;
+    text-align:center;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid #ffa502;
+
+}
+.table-title {
+    color: #353b48;
+    font-family: rubik, sans-serif;
+    font-size: small;
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid #192a56;
+}
+.box-container {
+    overflow:auto;
+    max-width: 1440px;
+    margin: auto;
+    padding: 10px;
+
+}
+.box {
+    background-color:#f5f6fa ;
+    display: flex;
+    float:left;
+    width:24%;
+    margin-top: 10px ;
+    margin-right: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 7px #353b48;
+}
+.box:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+.box p {
+    max-width:50%;
+    float: left;
+    vertical-align: middle;
+    font-size: 16px;
+    color:#192a56;
+    font-family: "Source Sans Pro", sans-serif;
+    display:inline-block;
+    padding: 10px;
+    margin:auto;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    font-weight: normal;
+
+}
+.box .persentase{
+    width:25%;
+    font-size: larger;
+    text-align: center;
+    color:#ffa502;
+    float: left;
+    margin:auto;
+    padding: 5px;
+
+}
+.box img {
+    width:25%;
+    text-align: center;
+    color:black;
+    float: left;
+    margin:auto;
+    padding: 5px;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .box{
+        width:100%;
+    }
+    table {
+        width:100%
+    }
+}
+
+
+table {
+    font-family: "Source Sans Pro", sans-serif;
+    border-collapse: collapse;
+    float: left;
+    max-width: 70%;
+    display: inline-block;
+
+}
+
+td, th {
+    border-bottom: 1px solid darkgray;
+    text-align: center;
+    padding: 8px;
+}
+
+.ruangilmu th {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 10px;
+    background-color: #dcdde1;
+    color: #273c75;
+    font-size: larger;
+
+}
+
+table.ruangilmu {
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+}
+
+table.ruangilmu:hover {
+    position: absolute;
+    z-index: 100;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.col-header {
+    border-top-left-radius: 20px;
+
+}
+th.feature-desc {
+    font-size: 20px;
+    color: #353b48;
+    background-color: darkgray;
+}
+.feature {
+    color:#e5e5e5;
+}
+.feature-desc {
+    color:#353b48;
+}
+.ri-desc {
+    color:#e5e5e5;
+}
+
+.table-container {
+    overflow: hidden;
+    margin: auto;
+    max-width: 1000px;
+
+
+}
+
+
+
+
+
